@@ -140,7 +140,7 @@ class Calc {
                 }
             }
         }
-        if (parenthesesCount != 0 || (variable.isEmpty() && tokens.last() != ")"))
+        if (parenthesesCount != 0 || operator.isNotEmpty())
             throw IllegalArgumentException()
         return tokens
     }
